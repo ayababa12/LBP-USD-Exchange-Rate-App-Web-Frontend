@@ -1,0 +1,18 @@
+.loading-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+  }
+
+  .loading-elements {
+    text-align: center; /* Center the text and circle */
+  }
+  .loading-text{
+    font-weight: bold !important;
+    margin-bottom: 20px !important;
+  }
+  .gold-crypto-title{
+    font-weight: bold !important; 
+    text-align: center !important;
+  }

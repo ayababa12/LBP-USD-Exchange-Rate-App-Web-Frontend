@@ -1,0 +1,128 @@
+.sr-only { /* for screen reader only*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.err-msg{
+  color: var(--err-msg-color);
+  font-weight: bold;
+}
+.wrapper {
+  margin-top: 50px;
+  background-color: var(--foreground-color);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  color: var(--text-color);
+}
+.wrapper input {
+  padding: 3px 6px;
+}
+#transaction-type .MuiMenuItem-root {
+  height: 30px; /* Adjust the height as needed */
+  font-size: 0.75rem; /* Adjust the font size as needed */
+}
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: var(--text-box-border-color) !important;
+  color: var(--text-box-border-color) !important;
+}
+.MuiButton-contained {
+  background-color: var(--button-color) !important;
+}
+button.MuiButton-text {
+  color: var(--text-button-color);
+  font-weight: bold; 
+}
+
+
+@media only screen and (min-width: 1400px) { 
+  .wrapper { 
+    width: 50%; 
+  } 
+  .wrapper input { 
+    width: 600px; 
+  } 
+} 
+@media only screen and (max-width: 1399px) and (min-width: 750px) { 
+  .wrapper { 
+    width: 75%; 
+  } 
+  .wrapper input { 
+    width: 400px; 
+  }   
+} 
+@media (max-width: 768px) {
+  .wrapper { 
+    width: 75%; 
+  } 
+}
+body{
+  background-color: var(--background-color);
+  font-family: Roboto-slab;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.input-field label{
+  color: var(--input-text-color) !important;
+}
+.input-field input{
+  color: var(--input-text-color) !important;
+}
+.input-field label:focus{
+  color: var(--input-text-color) !important;
+  font-weight: bold !important;
+}
+.input-field {
+  color: var(--input-text-color) !important; 
+}
+.input-field .MuiSelect-icon {
+  color: var(--input-text-color) !important; 
+}
+.input-field .MuiOutlinedInput-notchedOutline {
+  color: var(--input-text-color) !important; 
+}
+
+:root{
+  --background-color: #ECECEC;
+  --header-color: #AAABB8;
+  --foreground-color: #fff;
+  --text-color: black;
+  --header-text-color: #2C2C54;
+  --hamburger-color: #2C2C54;
+  --text-box-border-color: #2C2C54;
+  --input-text-color:#2C2C54;
+  --table-background: "white";
+  --table-first-row-background: #AAABB8;
+  --button-color: #2C2C54;
+  --dialog-background: #AAABB8;
+  --text-button-color: #2C2C54;
+  --loading-color: "black";
+  --err-msg-color: #6b0801;
+}
+[data-theme='dark'] {
+  --background-color: #101023;
+  --header-color: #03030a;
+  --foreground-color: #03030a;
+  --text-color: #ECECEC;
+  --header-text-color: #ECECEC;
+  --hamburger-color: #ECECEC;
+  --text-box-border-color: #ECECEC;
+  --input-text-color:#ECECEC;
+  --table-background: #1d1d3b;
+  --table-first-row-background: #1d1d3b;
+  --button-color: #03030a;
+  --text-button-color: #ECECEC;
+  --loading-color: "white";
+  --err-msg-color: "white";
+}
+
+
+

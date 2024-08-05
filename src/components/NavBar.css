@@ -1,0 +1,41 @@
+.header{
+    background-color: var(--header-color);
+    color: var(--header-text-color);
+  }  
+.authButtons{
+    position:absolute; 
+    right:4px;
+    top:13px;
+    display: flex;
+    flex-direction: row;
+  }
+  .navBarItem{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    transition: opacity 0.3s;
+  }
+  .navBarItem:hover {
+    opacity: 0.5; /* Change opacity on hover */
+  }
+  .navBarLink{
+    color: var(--header-text-color) !important; 
+    text-decoration: none; 
+  }
+  .navBarList{
+    margin-top: 65px;
+  }
+  .navBarList li{
+    margin-left: -40px;
+  }
+  .hamburger-icon{
+    font-size: 24px;
+    margin-right: 14px; 
+    color: var(--hamburger-color);
+  }

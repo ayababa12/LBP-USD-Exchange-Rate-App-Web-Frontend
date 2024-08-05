@@ -1,0 +1,83 @@
+.wrapperStatistics {
+    margin-top: 50px;
+    color: var(--text-color);
+    background-color: var(--foreground-color);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+.datepicker-wrapper{
+    padding: 1rem;
+    display: flex;
+    gap : 20px;
+    align-items: center;
+}
+.lineCharts{
+    padding: 1rem;
+    display: flex;
+    gap: 50px;
+
+}
+
+.chartTitle{
+    text-align: center;
+}
+.chartContainer {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+.stats-table{
+    background-color: var(--table-background);
+}
+.stats-table-row{
+    background-color: var(--table-first-row-background);
+}
+.stats-table-title-cell{
+    color: var(--text-color) !important;
+    font-weight: bold !important;
+}
+.stats-table-cell{
+    color: var(--text-color) !important;
+    font-weight: bold !important;
+}
+@media only screen and (min-width: 1400px) { 
+    .wrapperStatistics{
+        width: 90%
+    }
+    .chartContainer{
+    width: 50%
+    }
+}
+@media only screen and (max-width: 1399px) and (min-width: 750px) { 
+    .wrapperStatistics{
+        width: 90%
+    }
+    .chartContainer{
+        width: 100%
+    }
+    .lineCharts{
+        display: flex;
+        flex-direction: column; 
+    }
+    
+}
+@media (max-width: 768px) {
+    .wrapperStatistics{
+        width: 85%
+    }
+    .lineCharts{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .datepicker-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .stats-input-container{
+        width:90%;
+    }
+}

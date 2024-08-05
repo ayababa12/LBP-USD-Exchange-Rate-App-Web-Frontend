@@ -1,0 +1,88 @@
+.offer-list{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 20px;
+  }
+  .offer{
+    background-color: var(--foreground-color);
+    color: var(--text-color);
+    margin: 10px; 
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+  
+  .filter-button{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .filter-button button {
+    width: auto; /* Adjust the width as needed */
+    
+  }
+  .dialog-line{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .dialog-apply-cancel-buttons{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dialog-container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start ;
+    padding: 30px; 
+    background-color: var(--dialog-background); 
+  }
+  .dialog-container .MuiTypography-root {
+    font-weight: bold !important;
+  }
+  .offer-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .edit-delete-buttons{
+    position: relative;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .yes-no-delete-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-left:85px;
+  }
+  .yes-no-delete-buttons > *:not(:last-child) {
+    margin-right: 10px; 
+  }
+  @media only screen and (min-width: 1400px) { 
+    .offer{
+        width: calc(33.33% - 20px);
+        margin-bottom: 10px;
+      }
+  }
+  @media only screen and (max-width: 1399px) and (min-width: 750px) { 
+    .offer{
+        width: calc(33.33% - 20px);
+        margin-bottom: 10px;
+      }
+    }
+
+@media (max-width: 768px) {
+    .offer{
+        width: 100%; 
+        margin-bottom: 10px; 
+      }
+    }
